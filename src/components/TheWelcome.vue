@@ -11,7 +11,7 @@ import fetchPiper1Response from '@/services/piper1Service.js'
 
 const sendRequest = async () => {
   try {
-    const response = await fetchPiper1Response(inputText.value)
+    const response = await fetchPiper1Response(inputText)
     responseText.value = JSON.stringify(response, null, 2)
   } catch (error) {
     responseText.value = `Error: ${error.message}`
@@ -38,6 +38,8 @@ const sendRequest = async () => {
           <button @click="sendRequest">Send</button>
         </div>
       </div>
+      <h3 class="card-header">Request:</h3>
+      <pre>{{ inputText }}</pre>
       <h3 class="card-header">Response:</h3>
       <pre>{{ responseText }}</pre>
       <h2>4. Response WAV</h2>
