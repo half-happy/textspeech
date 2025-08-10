@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
-
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
@@ -9,7 +7,7 @@ import HelloWorld from './components/HelloWorld.vue'
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
+    <div class="wrapper" data-theme="dark">
       <HelloWorld msg="Cool Beans." />
 
       <!-- <nav>

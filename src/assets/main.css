@@ -1,4 +1,5 @@
 @import './base.css';
+@import './pico-main/css/pico.min.css';
 
 #app {
   max-width: 1280px;
@@ -33,3 +34,6 @@ a,
     padding: 0 2rem;
   }
 }
+
+/* Use Pico Scss */
+@use "pico";

@@ -11,7 +11,7 @@ defineProps({
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      You’ve successfully created a project.
+      This is a project to demonstrate text-to-speech functionality using the Piper1 HTTP API.
     </h3>
   </div>
 </template>
